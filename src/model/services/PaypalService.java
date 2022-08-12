@@ -2,6 +2,7 @@ package model.services;
 
 public class PaypalService implements OnlinePaymentService {
 
+    // Poderia ter definido as duas porcentagens como constantes.
     @Override
     public double paymentFee(double amount) {
         return amount + (amount * 0.02);
